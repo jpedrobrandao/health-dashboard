@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Configuração da conexão com o PostgreSQL
-DATABASE_URI = "postgresql://postgres:jp270299@localhost:5432/health_data"
+DATABASE_URI = "postgresql://postgres:PASSWORD@localhost:5432/health_data"
 engine = create_engine(DATABASE_URI)
 
 @app.route('/api/data', methods=['GET'])
